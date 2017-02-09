@@ -109,7 +109,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/kb0_mean_dropVel_vs_Lx
-	scale 50
+	width 98col%
 	clip
 
 \end_inset
@@ -363,7 +363,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/kb0_mean_dropVel_vs_gasImpactVel.mide
-	scale 50
+	width 98col%
+	clip
 
 \end_inset
 
