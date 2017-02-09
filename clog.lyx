@@ -1,0 +1,445 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size largest
+Droplet transport in a polymer coated nanochannel
+\end_layout
+
+\begin_layout Section
+
+\series bold
+\size large
+Results
+\end_layout
+
+\begin_layout Subsection
+Droplet Dynamics
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/kb0_mean_dropVel_vs_Lx
+	scale 50
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "dropVel_vs_L_kb0"
+
+\end_inset
+
+Droplet velocity (
+\begin_inset Formula $v_{d}$
+\end_inset
+
+) as a function of the channel length (
+\begin_inset Formula $L$
+\end_inset
+
+).
+ Expanding 
+\begin_inset Formula $L$
+\end_inset
+
+ is equivalent to increasing the distance between subsequent droplets, due
+ to the periodic boundary conditions applied in the simulations.
+ This means that the closer the droplets are to each other, the faster they
+ travel across the channel.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "dropVel_vs_L_kb0"
+
+\end_inset
+
+, the mean terminal velocity of the droplet is plotted as a function of
+ the channel length (
+\begin_inset Formula $L$
+\end_inset
+
+).
+ The droplet extension in the 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ direction is approximately 
+\begin_inset Formula $31\sigma$
+\end_inset
+
+, and in the 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+ direction 
+\begin_inset Formula $20\sigma$
+\end_inset
+
+.
+ Despite of the droplets having the same mass in every simulation 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Hacer inset the numero de particulas droplet vs L para demostrar que la
+ masa de la gota es igual para todos los L del canal usados
+\end_layout
+
+\end_inset
+
+, and the same total external force applied on them, the velocity varies
+ significantly (
+\begin_inset Formula $\sim16\%$
+\end_inset
+
+ ) with 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ To understand this behavior, it is necessary to take into account the 3
+ forces acting on the clog: the external driving force, the friction force
+ of the brush and the friction force asserted by the gas.
+ The external force is constant, because it is the sum of all the constant
+ forces applied on the particles composing the droplet, and the number of
+ particles is roughly the same for all channel lengths.
+ The friction force between vapor and clog is proportional to the velocity
+ of the droplet relative to the surrounding gas.
+ In the presence of the clog, the gas adopts a non-trivial velocity profile,
+ that depends on 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+To understand this, we can first think of a channel filled with gas, in
+ the absence of a droplet.
+ This system is homogeneous (just a vapor phase), and there is a continuous
+ transnational symmetry along the channel.
+ If there is a an external force per particle applied, as in the droplet
+ case, a homogeneous gas velocity profile will be obtained.
+ Simulations of such a system (channel with polymer brush and gas) were
+ performed, obtaining a homogeneous velocity of the gas inside the channel:
+ 
+\begin_inset Formula $v_{\infty}=0.09\sigma/\tau$
+\end_inset
+
+.
+ If a droplet is inserted into this system, the translational symmetry is
+ broken, and the gas velocity profile is perturbed.
+ The clog will travel faster than the gas through the channel, because it
+ has a greater density, thus feeling a larger external force per unit volume.
+ In the vicinity of the droplet, the gas will adopt a velocity similar to
+ the clog, and, if the channel is large enough, the velocity of the gas
+ far away from the clog will be the same as the velocity in the channel
+ without droplet.
+ This assertions were verified simulating a very large channel (much larger
+ than droplet size) with a clog and without liquid phase.
+ 
+\end_layout
+
+\begin_layout Standard
+If the channel is not long enough to allow for gas to relax and adopt it's
+ terminal velocity, then the mean gas velocity will be closer to the velocity
+ of the clog.
+ Because the friction force is proportional to the velocity difference between
+ gas and droplet, in a short channel the friction will be lower, thus having
+ a faster droplet moving in it.
+ This can be also seen noticing that due to the periodic boundary conditions
+ in 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ , the channel length is equal to the distance between consecutive clogs.
+ The system represents a train of droplets, each at a fixed constant distance
+ given by 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ If the distance between adjacent droplets is large, then the gas between
+ them relaxes and adopts the terminal gas velocity 
+\begin_inset Formula $v_{\infty}$
+\end_inset
+
+.
+ This will enhance the velocity difference between gas and droplet, which
+ is proportional to the friction force, thus slowing the droplet down.
+ 
+\end_layout
+
+\begin_layout Standard
+Aside from the external driving force and the friction induced by the presence
+ of the vapor phase, there is a third force acting on the clog due to the
+ liquid-brush interaction.
+ The sum of all forces acting on the droplet must be 0 on average, because
+ the trajectory of the clog describes a uniform linear motion
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Mostrar una trayectoria MRU de una gota?
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+0=n_{drop}\text{·}f_{ext}-\gamma_{gas}(v_{drop}-v_{gas})-f_{brush}\label{eq:bal_force}
+\end{equation}
+
+\end_inset
+
+If the friction force between brush and droplet (
+\begin_inset Formula $f_{brush}$
+\end_inset
+
+) follows Amontons' laws, then 
+\begin_inset Formula $f_{brush}$
+\end_inset
+
+ should hold the same value for all channel lengths.
+ Thus giving a linear relation between 
+\begin_inset Formula $v_{drop}$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{gas}$
+\end_inset
+
+, with slope 1: 
+\begin_inset Formula 
+\begin{equation}
+v_{drop}=v_{gas}+(n_{drop}\text{·}f_{ext}+f_{brush})/\gamma_{gas}
+\end{equation}
+
+\end_inset
+
+If the brush-droplet interaction behaves like a drag force, and is proportional
+ to the velocity difference between droplet and brush, then equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:bal_force"
+
+\end_inset
+
+ can be rewritten as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v_{drop}=v_{gas}\gamma_{gas}/(\gamma_{gas}+\gamma_{brush})+n_{drop}\text{·}f_{ext}/(\gamma_{gas}+\gamma_{brush})\label{eq:friction}
+\end{equation}
+
+\end_inset
+
+which has a slope smaller than 1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/kb0_mean_dropVel_vs_gasImpactVel.mide
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:kb0_vd_vs_vg"
+
+\end_inset
+
+Droplet velocity (black dots) plotted against surrounding gas velocity.
+ Each point corresponds to a different channel length.
+ The red continuous line is the linear regression of the data.
+ The slope is smaller than 1, which indicates that the brush-droplet interaction
+ depends on their relative velocities, and does not follow Amonton's Law.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Plotting the velocity of the droplet 
+\begin_inset Formula $v_{d}$
+\end_inset
+
+ versus the surrounding gas velocity 
+\begin_inset Formula $v_{g}$
+\end_inset
+
+, it is possible to discern the nature of the brush friction force (Amonton
+ vs Drag), and obtain the friction coefficients.
+ In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:kb0_vd_vs_vg"
+
+\end_inset
+
+ it is possible to observe the linear relation between 
+\begin_inset Formula $v_{d}$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{g}$
+\end_inset
+
+.
+ The slope of the linear regression is less than 1, implying that the brush
+ friction force on the droplet depends on the droplet velocity.
+ Following equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:friction"
+
+\end_inset
+
+, the friction coefficients can be estimated: 
+\begin_inset Formula $\gamma_{b}/Area=0.0394451$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma_{g}/Area=0.240418$
+\end_inset
+
+ .
+ Dividing by the corresponding Area of contact (drop-gas or drop-brush),
+ allows to compare the friction coefficients for different droplets.
+ 
+\end_layout
+
+\begin_layout Subsection
+Brush and chain properties 
+\end_layout
+
+\begin_layout Standard
+- FIG 1: Rz brush vs x-x_drop
+\end_layout
+
+\end_body
+\end_document
