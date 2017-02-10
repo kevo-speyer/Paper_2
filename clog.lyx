@@ -5,8 +5,8 @@
 \save_transient_properties true
 \origin unavailable
 \textclass revtex4-1
-\options twocolumn
-\use_default_options true
+\options pre,twocolumn
+\use_default_options false
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -77,6 +77,52 @@
 \series bold
 \size largest
 Droplet transport in a polymer coated nanochannel
+\end_layout
+
+\begin_layout Author
+K.
+ Speyer
+\begin_inset Formula $^{*\dag}$
+\end_inset
+
+, C.
+ Pastorino
+\begin_inset Formula $^{*\dag}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Abstract
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Formula $^{*}$
+\end_inset
+
+Departamento de Física de la Materia Condensada, Centro Atómico Constituyentes,
+ CNEA, Av.Gral.
+\begin_inset space ~
+\end_inset
+
+Paz 1499, 1650 Pcia.
+\begin_inset space ~
+\end_inset
+
+de Buenos Aires, Argentina
+\end_layout
+
+\begin_layout Author Email
+
+pastor@cnea.gov.ar
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Formula $^{\dag}$
+\end_inset
+
+ CONICET, Avenida Rivadavia 1917, C1033AAJ Buenos Aires, Argentina
 \end_layout
 
 \begin_layout Section
@@ -451,6 +497,14 @@ Brush and chain properties
 
 \begin_layout Standard
 - FIG 1: Rz brush vs x-x_drop
+\end_layout
+
+\begin_layout Acknowledgments
+
+\lang american
+Financial support through grants PICT-2011-1887, PIP 2011, INN-CNEA 2011,
+ PICT-E 2014, is gratefully acknowledged.
+ 
 \end_layout
 
 \end_body
